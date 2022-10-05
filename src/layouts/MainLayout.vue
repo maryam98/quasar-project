@@ -33,7 +33,7 @@
         <q-toolbar class="bg-primary" />
         <q-item class="bg-grey-3">
           <q-item-section>
-            List
+            Listt
           </q-item-section>
           <q-item-section>
             <q-btn
