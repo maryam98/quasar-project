@@ -56,7 +56,7 @@
             shoping list
           </q-item-section>
           <q-item-section side>
-            12
+            14
           </q-item-section>
         </q-item>
       </q-list>
