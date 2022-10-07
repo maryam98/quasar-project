@@ -29,37 +29,21 @@
       bordered
       class="bg-grey-l"
     >
-      <q-list>
-        <q-toolbar class="bg-primary" />
-        <q-item class="bg-grey-3">
-          <q-item-section>
-            Listt
-          </q-item-section>
-          <q-item-section>
-            <q-btn
-              icon="mdi-plus"
-              size="sm"
-              flat
-              round
-            />
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable>
-          <q-item-section side>
-            <q-icon
-              name="mdi-shopping"
-              color="red"
-            />
-          </q-item-section>
-          <q-item-section class="text-green">
-            shoping list
-          </q-item-section>
-          <q-item-section side>
-            14
-          </q-item-section>
-        </q-item>
-      </q-list>
+      <q-toolbar class="bg-primary" />
+      <q-item class="bg-grey-3">
+        <q-item-section>
+          Listt
+        </q-item-section>
+        <q-item-section side>
+          <CreateTodoListButton
+            icon="mdi-plus"
+            size="sm"
+            flat
+            round
+          />
+        </q-item-section>
+      </q-item>
+      <TodoListsList />
     </q-drawer>
 
     <q-page-container>
@@ -70,14 +54,14 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
+import CreateTodoListButton from '../components/CreateTodoListButton.vue'
+import TodoListsList from 'src/components/TodoListsList.vue'
 
 export default defineComponent({
-
+  components: { CreateTodoListButton, TodoListsList },
   setup () {
     const leftDrawerOpen = ref(false)
-
     return {
-
       leftDrawerOpen,
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
