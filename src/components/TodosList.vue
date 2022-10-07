@@ -13,7 +13,7 @@
         <q-item-section side>
           <DeleteTodoButton />
         </q-item-section>
-      </q-item>/>
+      </q-item>
     </q-list>
   </div>
 </template>

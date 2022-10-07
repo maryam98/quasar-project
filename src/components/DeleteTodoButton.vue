@@ -1,5 +1,5 @@
 <template>
-  <btn
+  <q-btn
     flat
     round
     size="sm"
@@ -10,8 +10,6 @@
 <script>
 export default {
   // name: 'ComponentName',
-  setup () {
-    return {}
-  }
+
 }
 </script>
